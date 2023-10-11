@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Pe Charcha - Lifestyle Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ink+Free&display=swap">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the background color to #f7eaea and font for the entire page */
+        body {
+            background-color: #f7eaea; /* #f7eaea background */
+            font-family: 'Arial', sans-serif; /* You can replace 'Arial' with your desired font */
+            line-height: 1.6;
+            color: #000; /* Black text color */
+        }
+
+        /* Create a header with a slightly darker khaki background color and centered text */
+        header {
+            background-color: #f7eaea; /* #f7eaea background */
+            color: #000; /* Black text color */
+            text-align: center;
+            padding: 100px;
+        }
+
+        /* Style the header text with Ink Free font and different sizes */
+        header h1 {
+            font-family: 'Ink Free', cursive; /* Ink Free font */
+            font-size: 4rem; /* Bigger font size for "Chai" and "Charcha" */
+        }
+
+        /* Style the tea cup icon */
+        .tea-cup-icon {
+            font-size: 3rem;
+            margin-right: 10px;
+        }
+
+        /* Create a navigation menu with a slightly darker khaki background */
+        nav {
+            background-color: #f7eaea; /* #f7eaea background */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Style links in the navigation menu */
+        nav a {
+            text-decoration: none;
+            color: #000; /* Black text color */
+            font-weight: bold;
+        }
+
+        /* Create sections for different topics with accent background colors */
+        .section {
+            background-color: #f7eaea; /* #f7eaea background */
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style section headings in black */
+        .section h2 {
+            color: #000; /* Black text color */
+            font-size: 2rem;
+        }
+
+        /* Create a contact box for subscribing to the newsletter */
+        .contact-box {
+            background-color: #fff; /* White background for contact box */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the subscribe button */
+        .subscribe-button {
+            background-color: #000; /* Black background for subscribe button */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Create a footer with a white background, padding, and centered text */
+        footer {
+            background-color: #f7eaea; /* #f7eaea background */
+            color: #000; /* Black text color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Style social media icons */
+        .social-icons a {
+            color: #000; /* Black text color for icons */
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <i class="fas fa-mug-hot tea-cup-icon"></i> <!-- Tea Cup Icon -->
+        <h1 style="font-size: 4rem;">Chai <span style="font-size: 3rem;">Pe</span> Charcha</h1>
+        <p>Exploring life, daily activities, health and wellness, travel, food, and more.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#life">Life</a></li>
+            <li><a href="#health">Health and Wellness</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="section" id="about">
+        <h2>About</h2>
+        <p>Welcome to Chai Pe Charcha, your destination for lifestyle insights and discussions. We aim to explore various aspects of life, from daily activities to health and wellness, travel, food, and more.</p>
+    </div>
+
+    <div class="section" id="life">
+        <h2>Life</h2>
+        <p>Discover the joys and challenges of everyday life. We share stories, tips, and experiences that make life more fulfilling.</p>
+    </div>
+
+    <div class="section" id="health">
+        <h2>Health and Wellness</h2>
+        <p>Stay healthy and achieve overall wellness with our guides, tips, and advice. Your well-being is our priority.</p>
+    </div>
+
+    <div class="section" id="travel">
+        <h2>Travel</h2>
+        <p>Embark on exciting travel adventures with us. Explore new destinations, cultures, and travel tips to plan your next getaway.</p>
+    </div>
+
+    <div class="section" id="food">
+        <h2>Food</h2>
+        <p>Delve into the world of culinary delights. Discover recipes, cooking tips, and food experiences that will tantalize your taste buds.</p>
+    </div>
+
+    <div class="section" id="blog">
+        <h2>Blog</h2>
+        <p>Read our latest blog posts on a variety of topics. Stay informed and entertained with our engaging content.</p>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p>Subscribe to our newsletter for the latest updates and news:</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button class="subscribe-button" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Chai Pe Charcha. All rights reserved. | Disclaimer: The opinions expressed on this website are personal and for informational purposes only.
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/your_instagram_profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/your_facebook_profile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/your_twitter_profile" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
